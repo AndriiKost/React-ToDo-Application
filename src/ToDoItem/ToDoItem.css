@@ -1,0 +1,25 @@
+.ToDoItem {
+    display: block;
+    background: #eee;
+    border-radius: 3px;    
+    margin: 1% 10% 0 10%;
+    height: 50px;
+    width: 80%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.ToDoItem h2 {
+    padding: 10px;
+}
+
+.ToDoItem:hover {
+    cursor: pointer;
+    background: #606c88;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #f6f6f6;    
+    text-decoration: line-through;
+    transition: 0.8s;
+    transform: scale(1.2);
+}

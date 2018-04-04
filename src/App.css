@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.FunExtension {
+  font-size: 60%;
+  padding: 2px;
+}
+
+.TodoInputArea {
+  width: 90%;
+  margin: 10% 5% 5% 5%;
+}
+
+.TodoInputArea input {
+  width: 60%;
+  height: 30px;
+  transition: 0.8s;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 125%;
+}
+
+.TodoInputArea button {
+  width: 15%;
+  margin-left: 10%;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-size: 100%;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.TodoInputArea button:hover {
+  background-color: rgb(34,34,34);
+  color: #eee;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.ItemList {
+  border: 1px solid #000;
+  margin: 5% 10%;
+  width: 80%;
+}
+
+.TodoInputArea input:focus {
+  transform: scale(1.2);
+  font-size: 125%;
+}
