@@ -37,7 +37,13 @@ checkedItem = (personIndex) => {
   render() {
     let listOfItems = (
       <div>
-        {this.state.itemList.map((item, index) => {
+        {/* FILTER THE TODO ITEMS */}
+        {this.state.itemList.filter( todoItem =>
+          todoItem.itemTitle.toLowerCase().includes(
+            this.state.todoItem.toLowerCase()
+          )
+          // MAP AND RENDER EVERY FILTERED ITEM
+        ).map((item, index) => {
           return <ToDoItem
             click={() => this.checkedItem(index)}
             title={item.itemTitle} 
